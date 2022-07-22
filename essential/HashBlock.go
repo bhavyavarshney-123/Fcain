@@ -29,20 +29,19 @@ func NewBlock(data string, Priori []byte) *Block {
 	return block
 
 }
-func (b *Block) stringer() string {
+func (b *Block) String() string {
 	var s strings.Builder
-	s.WriteString("Block Hash")
+	s.WriteString("Block Hash\n")
 	s.WriteString(fmt.Sprintf("%x", b.BlockHash))
-	s.WriteString("/n")
+	s.WriteString("\n")
 
-	s.WriteString("Block data")
+	s.WriteString("Block data\n")
 	s.WriteString(string(b.BlockData))
-	s.WriteString("/n")
+	s.WriteString("\n")
 
-	s.WriteString("Block Priori")
+	s.WriteString("Block Priori\n")
 	s.WriteString(fmt.Sprintf("%x", b.PrioriHash))
-	s.WriteString("/n")
+	s.WriteString("\n")
 
 	return s.String()
 }
-
