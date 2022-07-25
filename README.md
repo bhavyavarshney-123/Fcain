@@ -1,2 +1,2 @@
 # Fchain
-First blockchain
+Very basic implementation of the Blockchain
